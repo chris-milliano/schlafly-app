@@ -5,6 +5,7 @@
         <a routerLink="/" title="Home">
             <div id="nav__logo" class="box"></div>
         </a>
+        
         <div id="nav__menu-button"
             class="box"
             (click)="toggleMenu()">
@@ -16,22 +17,17 @@
         </div>
 
         <div id="nav__desktop-options" class="box">
-
-
                 <a *ngFor="let navLink of navLinks | slice:0:5; let i = index;"
                     routerLink="{{navLink.link}}"
                     title="{{navLink.title}}"
                     attr.aria-label="{{navLink.title}} Link">
                     <div class="box desktop__option">{{ navLink.title }}</div>
                 </a>
-
-
         </div>
     </div>
 
     <div id="nav__menu-options" class="box">
         <ul id="nav__options" class="box" [ngClass]="{ 'nav__options--open': isMenuOpen }">
-
             <a *ngFor="let navLink of navLinks; let i = index;"
                 routerLink="{{navLink.link}}"
                 title="{{navLink.title}}"
@@ -42,7 +38,6 @@
                     {{ navLink.title }}
                 </li>
             </a>
-
         </ul>
     </div>
 </nav>

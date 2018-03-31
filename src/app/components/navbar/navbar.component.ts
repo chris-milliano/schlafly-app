@@ -9,8 +9,6 @@ import { NavLink } from '../../models/nav-link';
 })
 export class NavbarComponent implements OnInit {
 
-    NUM_DESKTOP_LINKS: number = 5;
-    
     isMenuOpen: boolean = false;
 
     navLinks: Array <NavLink> = [
