@@ -2,7 +2,7 @@
     <div id="nav__spacer" class="box"></div>
 
     <div id="nav__logos" class="box">
-        <a href="https://atlaslabels.com/" title="Home">
+        <a routerLink="/" title="Home">
             <div id="nav__logo" class="box"></div>
         </a>
         <div id="nav__menu-button"
@@ -16,47 +16,33 @@
         </div>
 
         <div id="nav__desktop-options" class="box">
-            <a href="https://atlaslabels.com/our-products/" title="Our Products" class="box desktop__option">
-                <div>OUR PRODUCTS</div>
-            </a>
-            <a href="https://atlaslabels.com/about-atlas-labels/" title="About" class="box desktop__option">
-                <div>ABOUT US</div>
-            </a>
-            <a href="https://atlaslabels.com/submit-your-artwork/" title="Upload Artwork" class="box desktop__option">
-                <div>UPLOAD ARTWORK</div>
-            </a>
-            <a href="https://atlaslabels.com/payment-portal/" title="Payment Portal" class="box desktop__option">
-                <div>PAYMENT PORTAL</div>
-            </a>
-            <a href="https://atlaslabels.com/contact-us/" title="Contact Us" class="box desktop__option">
-                <div>CONTACT US</div>
-            </a>
+
+
+                <a *ngFor="let navLink of navLinks | slice:0:5; let i = index;"
+                    routerLink="{{navLink.link}}"
+                    title="{{navLink.title}}"
+                    attr.aria-label="{{navLink.title}} Link">
+                    <div class="box desktop__option">{{ navLink.title }}</div>
+                </a>
+
+
         </div>
     </div>
 
     <div id="nav__menu-options" class="box">
         <ul id="nav__options" class="box" [ngClass]="{ 'nav__options--open': isMenuOpen }">
-            <a href="https://atlaslabels.com/our-products/" title="Our Products" class="box nav__option">
-                <li class="box option__li">OUR PRODUCTS</li>
+
+            <a *ngFor="let navLink of navLinks; let i = index;"
+                routerLink="{{navLink.link}}"
+                title="{{navLink.title}}"
+                attr.aria-label="{{navLink.title}} Link"
+                class="box nav__option">
+                <li class="box option__li"
+                    [ngClass]="{ 'option__li--odd': i%2 != 0, 'option__li--even': i%2 == 0 }">
+                    {{ navLink.title }}
+                </li>
             </a>
-            <a href="https://atlaslabels.com/about-atlas-labels/" title="About" class="box nav__option">
-                <li class="box option__li option__li--even">ABOUT US</li>
-            </a>
-            <a href="https://atlaslabels.com/submit-your-artwork/" title="Upload Artwork" class="box nav__option">
-                <li class="box option__li">UPLOAD ARTWORK</li>
-            </a>
-            <a href="https://atlaslabels.com/payment-portal/" title="Payment Portal" class="box nav__option">
-                <li class="box option__li option__li--even">PAYMENT PORTAL</li>
-            </a>
-            <a href="https://atlaslabels.com/contact-us/" title="Contact Us" class="box nav__option">
-                <li class="box option__li">CONTACT US</li>
-            </a>
-            <a href="https://atlaslabels.com/atlas-labels-blog/" title="Our Blog" class="box nav__option">
-                <li class="box option__li option__li--even">OUR BLOG</li>
-            </a>
-            <a href="https://boxshop.atlaslabels.com/" title="Online Catalog" class="box nav__option">
-                <li class="box option__li">ONLINE CATALOG</li>
-            </a>
+
         </ul>
     </div>
 </nav>
