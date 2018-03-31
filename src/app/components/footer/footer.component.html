@@ -1,0 +1,74 @@
+<footer class="box">
+
+    <div id="footer__page-links" class="box footer-box">
+        <ul>
+
+            <li *ngFor="let navLink of navLinks">
+                <a routerLink="{{ navLink.link }}"
+                    title="{{ navLink.title }}"
+                    attr.aria-label="{{ navLink.title }} Link">
+                    {{ navLink.title }}
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="footer__contact-links" class="box footer-box">
+        <ul>
+            <li>
+                <h2>CONTACT INFO</h2>
+            </li>
+            <li>
+                PHONE: <a href="tel:13142412337">314-241-BEER</a>
+            </li>
+            <li>
+                EMAIL: <a href="mailto:questions@schlafly.com">questions@schlafly</a>
+            </li>
+            <li>
+                <a href="https://goo.gl/maps/K2uwC9Lev9s">
+                    TAPROOM<br />
+                    2100 Locust Street<br />
+                    St. Louis, MO, 63103
+                </a>
+            </li>
+            <li>AND</li>
+            <li>
+                <a href="https://goo.gl/maps/K2uwC9Lev9s">
+                    BOTTLEWORKS<br />
+                    2100 Locust Street<br />
+                    St. Louis, MO, 63103
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer__social-links" class="box footer-box">
+        <a href="https://www.facebook.com/schlaflybeer"
+            title="Facebook"
+            aria-label="Facebook Link">
+            <i class="fab fa-3x fa-facebook-f social__link"></i>
+        </a>
+        <a href="https://twitter.com/schlafly"
+            title="Twitter"
+            aria-label="Twitter Link">
+            <i class="fab fa-3x fa-twitter social__link"></i>
+        </a>
+        <a href="https://instagram.com/schlaflybeer"
+            title="Instagram"
+            aria-label="Instagram Link">
+            <i class="fab fa-3x fa-instagram social__link"></i>
+        </a>
+        <a href="https://untappd.com/schlafly"
+            title="Untappd"
+            aria-label="Untappd Link">
+            <i class="fab fa-3x fa-untappd social__link"></i>
+        </a>
+        <a href="https://www.youtube.com/user/SchlaflyBeer"
+            title="Youtube"
+            aria-label="Youtube Link">
+            <i class="fab fa-3x fa-youtube social__link"></i>
+        </a>
+    </div>
+
+</footer>
