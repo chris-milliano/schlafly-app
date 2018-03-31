@@ -10,13 +10,15 @@ import { environment } from '../environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    LandingComponent
+    LandingComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
