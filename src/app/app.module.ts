@@ -8,15 +8,29 @@ import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { BeersPageComponent } from './pages/beers-page/beers-page.component';
+import { FoodPageComponent } from './pages/food-page/food-page.component';
+import { EventsPageComponent } from './pages/events-page/events-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { ToursPageComponent } from './pages/tours-page/tours-page.component';
+import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    LandingComponent
+    LandingComponent,
+    NavbarComponent,
+    AboutPageComponent,
+    BeersPageComponent,
+    FoodPageComponent,
+    EventsPageComponent,
+    ContactPageComponent,
+    ToursPageComponent,
+    ShopPageComponent
   ],
   imports: [
     BrowserModule,
