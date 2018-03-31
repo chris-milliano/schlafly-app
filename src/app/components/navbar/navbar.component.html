@@ -5,7 +5,7 @@
         <a routerLink="/" title="Home">
             <div id="nav__logo" class="box"></div>
         </a>
-        
+
         <div id="nav__menu-button"
             class="box"
             (click)="toggleMenu()">
@@ -32,7 +32,8 @@
                 routerLink="{{navLink.link}}"
                 title="{{navLink.title}}"
                 attr.aria-label="{{navLink.title}} Link"
-                class="box nav__option">
+                class="box nav__option"
+                (click)="toggleMenu()">
                 <li class="box option__li"
                     [ngClass]="{ 'option__li--odd': i%2 != 0, 'option__li--even': i%2 == 0 }">
                     {{ navLink.title }}
