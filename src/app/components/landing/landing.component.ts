@@ -15,52 +15,28 @@ export class LandingComponent implements OnInit {
 
     ngOnInit() {
 
-        if (sessionStorage.hasSeenAnimation == null) {
-            console.log("start animation");
-            this.runIntroAnimation();
-        } else {
-            this.hasNotSeenAnimation = false;
-        }
+        // Determine if the
+        if (sessionStorage.hasSeenAnimation == null) { this.runIntroAnimation(); }
+        else { this.hasNotSeenAnimation = false; }
     }
 
-    //
+    // Iterate over the intro animation
     runIntroAnimation() {
         setTimeout ( () => {
             this.wordAnimationIndex++;
-            if (this.wordAnimationIndex < 4) {
-                this.runIntroAnimation();
-            }
+
+            // Recursively call each word until the logo appears
+            if (this.wordAnimationIndex < 4) { this.runIntroAnimation(); }
+
+            // Once the logo has been displayed end the animation and record
+            // that the user has seen the animation so it does not display
+            // again during this session
             else {
                 setTimeout( () => {
                     this.isAnimationRunning = false;
                     sessionStorage.hasSeenAnimation = true;
-                    console.log("end animation");
                 }, 1000);
             }
         }, 1000);
     }
-
-
-
-    // //
-    // runIntroAnimation() {
-    //     setTimeout( () => {
-    //         this.showNextWord();
-    //     } , 1000);
-    // }
-    //
-    // //
-    // showNextWord() {
-    //     this.wordAnimationIndex++;
-    //     if (this.wordAnimationIndex < 4) {
-    //         this.runIntroAnimation();
-    //     }
-    //     else {
-    //         setTimeout( () => {
-    //             this.isAnimationRunning = false;
-    //
-    //         } , 1000);
-    //     }
-    // }
-
 }
