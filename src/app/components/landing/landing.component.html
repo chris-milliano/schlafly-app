@@ -1,6 +1,9 @@
 <div id="landing" class="box">
 
-    <div id="landing__animation" class="box" [ngClass]="{ 'loaded': !isAnimationRunning }">
+    <div id="landing__animation"
+        class="box"
+        [ngClass]="{ 'loaded': !isAnimationRunning }"
+        *ngIf="hasNotSeenAnimation">
         <div id="landing__display" class="box">
             <h1 [ngClass]="{ 'landing_item--visable': wordAnimationIndex == 1 }"
                 id="word--1"
@@ -26,7 +29,5 @@
     <div id="landing__static" class="box">
         <div class="box landing__item landing__logo"></div>
     </div>
-
-
 
 </div>

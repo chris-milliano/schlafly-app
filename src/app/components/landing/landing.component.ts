@@ -7,30 +7,60 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
+    hasNotSeenAnimation: boolean = true;
     wordAnimationIndex: number = 0;
-    isAnimationRunning = true;
+    isAnimationRunning: boolean = true;
 
     constructor() { }
 
     ngOnInit() {
-        this.runIntroAnimation();
+
+        if (sessionStorage.hasSeenAnimation == null) {
+            console.log("start animation");
+            this.runIntroAnimation();
+        } else {
+            this.hasNotSeenAnimation = false;
+        }
     }
 
     //
     runIntroAnimation() {
-        setTimeout( () => { this.showNextWord(); } , 1000);
+        setTimeout ( () => {
+            this.wordAnimationIndex++;
+            if (this.wordAnimationIndex < 4) {
+                this.runIntroAnimation();
+            }
+            else {
+                setTimeout( () => {
+                    this.isAnimationRunning = false;
+                    sessionStorage.hasSeenAnimation = true;
+                    console.log("end animation");
+                }, 1000);
+            }
+        }, 1000);
     }
 
+
+
+    // //
+    // runIntroAnimation() {
+    //     setTimeout( () => {
+    //         this.showNextWord();
+    //     } , 1000);
+    // }
     //
-    showNextWord() {
-        this.wordAnimationIndex++;
-        if (this.wordAnimationIndex < 4) {
-            this.runIntroAnimation();
-        }
-        else {
-            setTimeout( () => { this.isAnimationRunning = false; } , 1000);
-        }
-
-    }
+    // //
+    // showNextWord() {
+    //     this.wordAnimationIndex++;
+    //     if (this.wordAnimationIndex < 4) {
+    //         this.runIntroAnimation();
+    //     }
+    //     else {
+    //         setTimeout( () => {
+    //             this.isAnimationRunning = false;
+    //
+    //         } , 1000);
+    //     }
+    // }
 
 }

@@ -1,7 +1,9 @@
 #landing {
+    background: #000 url('/assets/images/landing/landing_bkgd.jpg') no-repeat center center;
+    background-size: cover;
 
     #landing__animation {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
@@ -11,7 +13,8 @@
         align-items: center;
         text-align: center;
         transition: all 1s ease;
-        background-color: #f00;
+        color: #000;
+        background-color: #f0e9d3;
 
         &.loaded {
             opacity: 0;
@@ -47,7 +50,7 @@
         align-items: center;
         text-align: center;
         transition: all 1s ease;
-        background-color: #f00;
+        background-color: rgba(0,0,0,0.7);
     }
 
     .landing__logo {
@@ -56,6 +59,7 @@
         max-width: 300px;
         max-height: 300px;
         margin: 5vh auto;
-        background-color: #0f0;
+        background: transparent url('/assets/images/main/logo_in_stl.jpg') no-repeat center center;
+        background-size: contain;
     }
 }
