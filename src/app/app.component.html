@@ -1,15 +1,11 @@
-<app-navbar></app-navbar>
+<div id="app-viewport" class="box">
 
-<router-outlet></router-outlet>
+    <app-navbar></app-navbar>
 
+    <main class="box">
+        <router-outlet></router-outlet>
+    </main>
 
-<div style="text-align:center" class="box">
-    <h1>Welcome to {{ title }}!</h1>
+    <app-footer></app-footer>
 
-    <a routerLink="/">
-        <button>HomeComponent</button>
-    </a>
-    <a routerLink="/about">
-        <button>AboutComponent</button>
-    </a>
 </div>

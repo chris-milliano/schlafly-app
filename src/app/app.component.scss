@@ -1,0 +1,14 @@
+#app-viewport {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+app-footer {
+    flex-shrink: 0;
+}

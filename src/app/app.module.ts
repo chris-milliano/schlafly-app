@@ -17,6 +17,7 @@ import { EventsPageComponent } from './pages/events-page/events-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ToursPageComponent } from './pages/tours-page/tours-page.component';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ShopPageComponent } from './pages/shop-page/shop-page.component';
     EventsPageComponent,
     ContactPageComponent,
     ToursPageComponent,
-    ShopPageComponent
+    ShopPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
