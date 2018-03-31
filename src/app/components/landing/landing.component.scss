@@ -1,0 +1,61 @@
+#landing {
+
+    #landing__animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: all 1s ease;
+        background-color: #f00;
+
+        &.loaded {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        #landing__display {
+
+            .landing__item {
+                opacity: 0;
+                transition: all 1s ease;
+            }
+
+            .landing_item--visable { opacity: 1; }
+
+            #word--1 { z-index: 1; }
+            #word--2 { z-index: 2; }
+            #word--3 { z-index: 3; }
+
+            .landing__word {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+            }
+        }
+    }
+
+    #landing__static {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: all 1s ease;
+        background-color: #f00;
+    }
+
+    .landing__logo {
+        width: 60vw;
+        height: 60vw;
+        max-width: 300px;
+        max-height: 300px;
+        margin: 5vh auto;
+        background-color: #0f0;
+    }
+}
