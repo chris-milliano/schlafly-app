@@ -1,0 +1,2 @@
+dk-brown = #3e1d00;
+lt-brown = #f0e9d3;

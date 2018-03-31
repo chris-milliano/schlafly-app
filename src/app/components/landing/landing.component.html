@@ -1,0 +1,33 @@
+<div id="landing" class="box">
+
+    <div id="landing__animation"
+        class="box"
+        [ngClass]="{ 'loaded': !isAnimationRunning }"
+        *ngIf="hasNotSeenAnimation">
+        <div id="landing__display" class="box">
+            <h1 [ngClass]="{ 'landing_item--visable': wordAnimationIndex == 1 }"
+                id="word--1"
+                class="box landing__item landing__word">
+                TRADITION
+            </h1>
+            <h1 [ngClass]="{ 'landing_item--visable': wordAnimationIndex == 2 }"
+                id="word--2"
+                class="box landing__item landing__word">
+                DISRUPTION
+            </h1>
+            <h1 [ngClass]="{ 'landing_item--visable': wordAnimationIndex == 3 }"
+                id="word--3"
+                class="box landing__item landing__word">
+                COMMUNITY
+            </h1>
+            <div [ngClass]="{ 'landing_item--visable': wordAnimationIndex == 4 }"
+                class="box landing__item landing__logo">
+            </div>
+        </div>
+    </div>
+
+    <div id="landing__static" class="box">
+        <div class="box landing__item landing__logo"></div>
+    </div>
+
+</div>
