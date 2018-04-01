@@ -1,3 +1,27 @@
-<p>
-  about-page works!
-</p>
+<div id="about-page" class="box">
+
+    <div id="about__hightlight-and-image"
+        class="box"
+        [style.background-image]="aboutCopy.imageURL">
+        <div id="about__hightlight"
+            class="box"
+            [innerHTML]="aboutCopy.highlightQuote">
+            <h1>Loading...</h1>
+        </div>
+
+        <div id="about__image"
+            class="box"
+            [style.background-image]="aboutCopy.imageURL">
+        </div>
+    </div>
+
+    <div id="about__main-text"
+        class="box"
+        [innerHTML]="aboutCopy.mainHTML">
+        <p>Loading...</p>
+    </div>
+
+
+
+
+</div>
