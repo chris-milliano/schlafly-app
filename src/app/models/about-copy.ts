@@ -5,7 +5,7 @@ export class AboutCopy {
 
     constructor() {
         this.highlightQuote = "<h1>Loading...</h1>";
-        this.imageURL = null;
+        this.imageURL = "";
         this.mainHTML = "<p>Loading...</p>"
     }
 }

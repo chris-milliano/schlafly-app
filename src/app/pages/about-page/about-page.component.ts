@@ -24,10 +24,7 @@ export class AboutPageComponent implements OnInit {
 
     getPageCopy() {
         this.aboutCopyService.getAboutCopy().subscribe (
-            res => {
-                console.log("res: ", res);
-                this.aboutCopy = res as AboutCopy;
-            }
+            res => { this.aboutCopy = res as AboutCopy; }
         );
     }
 

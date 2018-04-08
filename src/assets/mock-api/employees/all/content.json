@@ -1,0 +1,458 @@
+{
+    "departments": [
+        "FOUNDERS",
+        "SALES",
+        "ADMIN",
+        "MARKETING",
+        "RESTAURANTS",
+        "BREWERS",
+        "OPERATIONS",
+        "QUALITY",
+        "DISTRIBUTION",
+        "PACKAGING"
+    ],
+    "employees": [
+        {
+            "name": "Tom Schlafly",
+            "title": "Co-Founder & Chairman of the Board",
+            "department": "FOUNDERS",
+            "headShotURL": "/assets/images/employees/tom_schlafly.jpg",
+            "bio": "Tom Schlafly grew up in St. Louis and received his undergraduate and law degrees from Georgetown University. He is a partner at the St. Louis law firm Thompson Coburn LLP and serves on the boards of directors of Legg Mason Partners Equity Trust and Citizens National Bank of Greater St. Louis.  Tom serves on the boards of several not-for profit organizations, including The St. Louis Public Library and the CRUDEM Foundation, which operates a hospital in Milot, Haiti.  Tom is also a commentator for St. Louis Public Radio and the principal lyricist for The Courthouse Steps, a group of singing lawyers.",
+            "startDate": "1991",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Steve Lineberry",
+            "title": "Chain Accounts Manager",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/steve_lineberry.jpg",
+            "bio": "",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Ryan Ackermann",
+            "title": "Field Market Manager, STL",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/ryan_ackermann.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Gary Briggs",
+            "title": "Territory Manager, West",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/gary_briggs.jpg",
+            "bio": "A California Transplant, Taqueria Critic and Certified Cicerone®﻿",
+            "startDate": "2006",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Edward Corno",
+            "title": "Field Market Manager, STL",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/edward_corno.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Jake Flick",
+            "title": "Field Market Manager, STL",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/jake_flick.jpg",
+            "bio": "Northern Wisconsin transplant who loves local beers, his wife and daughter, and enjoys collecting vinyl records, carpentry and vintage stereo equipment.",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Dan Rogers",
+            "title": "Field Market Manager- DC Metro",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/dan_rogers.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Blakelee Loft",
+            "title": "Territory Maanager, NY/NJ",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/blakelee_loft.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Emily Cipolla",
+            "title": "Territory Manager, Chicago",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/emily_cipolla.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Ben Sorofman",
+            "title": "Field Market Manager, STL",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/ben_sorofman.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Ben Bruker",
+            "title": "Sales Operations Manager",
+            "department": "SALES",
+            "headShotURL": "/assets/images/employees/no-photo-available.jpg",
+            "bio": "",
+            "startDate": "2017",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Keith Moszczenski",
+            "title": "Chief  Operating and Financial Officer",
+            "department": "ADMIN",
+            "headShotURL": "/assets/images/employees/keith_moszczenski.jpg",
+            "bio": "Enjoys hunting, fishing, and torturing his employees with action logs and spreadsheets.",
+            "startDate": "2013",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "James Pendegraft",
+            "title": "Chief Executive Officer",
+            "department": "ADMIN",
+            "headShotURL": "/assets/images/employees/james_pendegraft.jpg",
+            "bio": "Our beardless leader ",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Alisha Vianello",
+            "title": "Human Resources Manager",
+            "department": "ADMIN",
+            "headShotURL": "/assets/images/employees/alisha_vianello.jpg",
+            "bio": "Explorer, world traveler, Crossfitter, Runner, and animal lover",
+            "startDate": "2012",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Sarah Crum",
+            "title": "Senior Accountant",
+            "department": "ADMIN",
+            "headShotURL": "/assets/images/employees/no-photo-available.jpg",
+            "bio": "",
+            "startDate": "2013",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Lisa Bohme",
+            "title": "Administrative Assistant",
+            "department": "ADMIN",
+            "headShotURL": "/assets/images/employees/lisa_bohme.jpg",
+            "bio": "",
+            "startDate": "2017",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Wil Rogers",
+            "title": "Brand Specialist",
+            "department": "MARKETING",
+            "headShotURL": "/assets/images/employees/wil_rogers.jpg",
+            "bio": "Not originally from St. Louis, but considers St. Louis to be his home.",
+            "startDate": "2011",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Stephen Hale",
+            "title": "Ambassador Brewer",
+            "department": "MARKETING",
+            "headShotURL": "/assets/images/employees/stephen_hale.jpg",
+            "bio": "A former chimney sweep, Latin teacher, and sea urchin diver, who moved to St. Louis from Maine to help open The Saint Louis Brewery.",
+            "startDate": "1991",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Lo Dugan",
+            "title": "Events Manager",
+            "department": "MARKETING",
+            "headShotURL": "/assets/images/employees/lo_dugan.jpg",
+            "bio": "Lover of succulents, rad tunes, and all things local. Purveyor of fun, and proud mama to pitbull Ruby, & fluffy kitty Kiki.",
+            "startDate": "2014",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Sarah Frost",
+            "title": "Senior Graphic Designer",
+            "department": "MARKETING",
+            "headShotURL": "/assets/images/employees/sarah_frost.jpg",
+            "bio": "In non-Schlafly life, is a sculptor and installation artist. Her work has been exhibited in New York, Miami, Houston, Washington DC and Basel, Switzerland and also been featured in Juxtapoz, FRAME and Wired.",
+            "startDate": "2004",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Lauren Mirelli",
+            "title": "Marketing Assistant",
+            "department": "MARKETING",
+            "headShotURL": "/assets/images/employees/lauren_mirelli.jpg",
+            "bio": "",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Andy White",
+            "title": "Director of Restaurant Operations & Executive Chef",
+            "department": "RESTAURANTS",
+            "headShotURL": "/assets/images/employees/no_photo_available.jpg",
+            "bio": "",
+            "startDate": "2008",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Nate Hogan",
+            "title": "Tap Room General Manager",
+            "department": "RESTAURANTS",
+            "headShotURL": "/assets/images/employees/nate_Hogan.jpg",
+            "bio": "",
+            "startDate": "2010",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Adam Wagner",
+            "title": "Tap Room Kitchen Manager",
+            "department": "RESTAURANTS",
+            "headShotURL": "/assets/images/employees/adam_wagner.jpg",
+            "bio": "",
+            "startDate": "2010",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Paul Smith",
+            "title": "Tap Room Restaurant Manager",
+            "department": "RESTAURANTS",
+            "headShotURL": "/assets/images/employees/paul_smith.jpg",
+            "bio": "",
+            "startDate": "2012",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Jeff Handlan",
+            "title": "Bottleworks Restaurant Manager",
+            "department": "RESTAURANTS",
+            "headShotURL": "/assets/images/employees/jeff_handlan.jpg",
+            "bio": "",
+            "startDate": "2014",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Charles Orear",
+            "title": "Schlafly Bottleworks General Manager",
+            "department": "RESTAURANTS",
+            "headShotURL": "/assets/images/employees/charles_orear.jpg",
+            "bio": "Working at Bottleworks gives him the opportunity to book the best musical talent in the region and has also allowed him to expand his beer knowledge by becoming BJCP and Cicerone® certified.﻿",
+            "startDate": "2004",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Tom Johnson",
+            "title": "Lead Brewer",
+            "department": "BREWERS",
+            "headShotURL": "/assets/images/employees/tom_johnson.jpg",
+            "bio": "",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Jared Williamson",
+            "title": "Lead Brewer",
+            "department": "BREWERS",
+            "headShotURL": "/assets/images/employees/jared_williamson.jpg",
+            "bio": "A Taco Aficionado and upright and electric bassist.",
+            "startDate": "2011",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Brian Beehn",
+            "title": "Brewer",
+            "department": "BREWERS",
+            "headShotURL": "/assets/images/employees/brian_beehn.jpg",
+            "bio": "",
+            "startDate": "2010",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Emily Byrne",
+            "title": "Bottleworks Brewer",
+            "department": "BREWERS",
+            "headShotURL": "/assets/images/employees/emily_byrne.jpg",
+            "bio": "",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Andy Favignano",
+            "title": "Brewer",
+            "department": "BREWERS",
+            "headShotURL": "/assets/images/employees/andy_favignano.jpg",
+            "bio": "Two time winner of the Chuck Norris Achievement in Excellence Award",
+            "startDate": "2013",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Chris Wolf",
+            "title": "Brewer",
+            "department": "BREWERS",
+            "headShotURL": "/assets/images/employees/chris_wolf.jpg",
+            "bio": "",
+            "startDate": "2013",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Kyle Roden",
+            "title": "Cellar Operator",
+            "department": "BREWERS",
+            "headShotURL": "/assets/images/employees/kyle_roden.jpg",
+            "bio": "",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Brian McBride",
+            "title": "Production Planning Manager",
+            "department": "OPERATIONS",
+            "headShotURL": "/assets/images/employees/brian_mcbride.jpg",
+            "bio": "Was born and raised in South St. Louis and has a Mechanical Engineering degree from UM-Rolla (now S&T). Is a proud 10 year resident of Maplewood.",
+            "startDate": "2003",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Emily Parker",
+            "title": "Head of Brewing Operations",
+            "department": "OPERATIONS",
+            "headShotURL": "/assets/images/employees/emily_parker.jpg",
+            "bio": "Graduated from UC Davis in 2009 with a BS in Food Science and Technology and emphasis in Brewing. Loves her some BEER…and rum.",
+            "startDate": "2010",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Matt McFarland",
+            "title": "Bottleworks Project Manager",
+            "department": "OPERATIONS",
+            "headShotURL": "/assets/images/employees/matt_mcfarland.jpg",
+            "bio": "Still bummed he spilled his Kool-Aid and didn’t get to ride on the comet.﻿",
+            "startDate": "2005",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Danny Kroeger",
+            "title": "Industrial Maintenance Technician",
+            "department": "OPERATIONS",
+            "headShotURL": "/assets/images/employees/danny_kroeger.jpg",
+            "bio": "",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Emily Deuhring",
+            "title": "Quality Assurance Supervisor",
+            "department": "QUALITY",
+            "headShotURL": "/assets/images/employees/emily_deuhring.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Jake Paasch",
+            "title": "Quality Assurance Specialist",
+            "department": "QUALITY",
+            "headShotURL": "/assets/images/employees/jake_paasch.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Tony Rangel",
+            "title": "Materials Handler",
+            "department": "DISTRIBUTION",
+            "headShotURL": "/assets/images/employees/tony_rangel.jpg",
+            "bio": "Likes beer. Thinks beer is yummy.",
+            "startDate": "2010",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Colin Atkinson",
+            "title": "Inventory Control & Warehouse Supervisor",
+            "department": "DISTRIBUTION",
+            "headShotURL": "/assets/images/employees/colin_atkinson.jpg",
+            "bio": "",
+            "startDate": "2014",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Chris Berry",
+            "title": "Materials Handler",
+            "department": "DISTRIBUTION",
+            "headShotURL": "/assets/images/employees/chris_berry.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Colby Rizzo",
+            "title": "Packaging Shift Supervisor",
+            "department": "PACKAGING",
+            "headShotURL": "/assets/images/employees/colby_rizzo.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Luke Plocher",
+            "title": "Filler Operator",
+            "department": "PACKAGING",
+            "headShotURL": "/assets/images/employees/luke_plocher.jpg",
+            "bio": "",
+            "startDate": "2015",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Dan Granda",
+            "title": "Packaging Operator",
+            "department": "PACKAGING",
+            "headShotURL": "/assets/images/employees/dan_granda.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Matt Malisia",
+            "title": "Packaging Shift Supervisor",
+            "department": "PACKAGING",
+            "headShotURL": "/assets/images/employees/matt_malisia.jpg",
+            "bio": "",
+            "startDate": "2016",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Scott Burk",
+            "title": "Packaging Operator",
+            "department": "PACKAGING",
+            "headShotURL": "/assets/images/employees/no_photo_available.jpg",
+            "bio": "",
+            "startDate": "2017",
+            "twitter": "",
+            "instagram": ""
+        },{
+            "name": "Drew Hoffmann",
+            "title": "Packaging Operator",
+            "department": "PACKAGING",
+            "headShotURL": "/assets/images/employees/no_photo_available.jpg",
+            "bio": "",
+            "startDate": "2017",
+            "twitter": "",
+            "instagram": ""
+        }
+    ]
+}

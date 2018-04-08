@@ -2,6 +2,7 @@
 
     <div id="about__hightlight-and-image"
         class="box"
+        *ngIf="aboutCopy.imageURL"
         [style.background-image]="aboutCopy.imageURL">
         <div id="about__hightlight"
             class="box"
@@ -21,7 +22,7 @@
         <p>Loading...</p>
     </div>
 
-
+    <app-people></app-people>
 
 
 </div>

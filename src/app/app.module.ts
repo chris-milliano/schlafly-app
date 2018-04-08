@@ -19,6 +19,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ToursPageComponent } from './pages/tours-page/tours-page.component';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PeopleComponent } from './components/people/people.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactPageComponent,
     ToursPageComponent,
     ShopPageComponent,
-    FooterComponent
+    FooterComponent,
+    PeopleComponent
   ],
   imports: [
     BrowserModule,
