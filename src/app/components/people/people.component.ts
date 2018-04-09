@@ -14,6 +14,11 @@ export class PeopleComponent implements OnInit {
 
     people: People;
 
+    isFilteringByDepartment: string = null;
+
+    isEmployeeSelected: boolean = false;
+    selectedEmployee: Employee = null;
+
     constructor (
         private peopleService: PeopleService
     ) {}
@@ -27,5 +32,24 @@ export class PeopleComponent implements OnInit {
         this.peopleService.getPeople().subscribe (
             res => { this.people = res; }
         );
+    }
+
+    getImageURLOf (url: string): string {
+        return `url(${url})`;
+    }
+
+    showEmployeeDetails(employeeName: string) {
+        this.isEmployeeSelected = !this.isEmployeeSelected;
+        let selectedEmployee: Employee;
+        for (let emp of this.people.employees) {
+            if (emp.name == employeeName) {
+                this.selectedEmployee = emp;
+            }
+        }
+    }
+
+    hideEmployeeDetails() {
+        this.isEmployeeSelected = !this.isEmployeeSelected;
+        this.selectedEmployee = null;
     }
 }

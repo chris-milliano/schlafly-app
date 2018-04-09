@@ -1,0 +1,69 @@
+#people-component {
+    position: relative;
+
+    #people__employees {
+        display: flex;
+        flex-wrap: wrap;
+
+        .people__employee {
+            width: 100%;
+            max-width: 350px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0e9d3;
+
+            .employee__image-border {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 3px solid #000;
+
+                .employee__image {
+                    width: 194px;
+                    height: 194px;
+                    background: #3e1d00 no-repeat center center;
+                    background-size: contain;
+                    border-radius: 50%;
+                    border: 4px solid #fff;
+                }
+            }
+        }
+    }
+
+    #people__selected-employee {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100000;
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .people__employee {
+            width: 80vw;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0e9d3;
+
+            .employee__image {
+                width: 194px;
+                height: 194px;
+                background: #3e1d00 no-repeat center center;
+                background-size: contain;
+                border-radius: 50%;
+                border: 4px solid #fff;
+            }
+
+            .employee__bio {
+                width: 80%;
+                margin: 20px auto;
+            }
+        }
+    }
+}

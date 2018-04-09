@@ -1,9 +1,49 @@
-<p>
-  people works!
-  {{ people.departments }}
-  done
-</p>
+<div id="people-component" class="box">
 
-<p *ngFor="let department of people.departments">
-    {{ department }}
-</p>
+    <div *ngIf="isFilteringByDepartment != null"
+        id="people__departments"
+        class="box">
+        <div *ngFor="let department of people.departments"
+            id="people__department"
+            class="box">
+            {{ department }}
+        </div>
+    </div>
+
+    <div id="people__employees"
+        class="box">
+        <div *ngFor="let employee of people.employees"
+            (click)="showEmployeeDetails(employee.name)"
+            class="box people__employee">
+            <div class="box employee__image-border">
+                <div [style.background-image]="getImageURLOf(employee.headShotURL)"
+                    class="box employee__image">
+                </div>
+            </div>
+            <h3 class="box employee__name">{{ employee.name }}</h3>
+            <h4 class="box employee__title">{{ employee.title }}</h4>
+        </div>
+    </div>
+
+    <div *ngIf="isEmployeeSelected"
+        (click)="hideEmployeeDetails()"
+        id="people__selected-employee"
+        class="box">
+        <div class="box people__employee">
+            <div class="box employee__image-border">
+                <div [style.background-image]="getImageURLOf(selectedEmployee.headShotURL)"
+                    class="box employee__image">
+                </div>
+            </div>
+            <h3 class="box employee__name">{{ selectedEmployee.name }}</h3>
+            <h4 class="box employee__title">{{ selectedEmployee.title }}</h4>
+            <h5 class="box employee__department">
+                {{ selectedEmployee.department | uppercase }}
+            </h5>
+            <div class="box employee__bio"
+                [innerHTML]="selectedEmployee.bio">
+            </div>
+        </div>
+    </div>
+
+</div>
