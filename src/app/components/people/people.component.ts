@@ -13,8 +13,10 @@ import { PeopleService } from '../../services/people.service';
 export class PeopleComponent implements OnInit {
 
     people: People;
+    holdPeople: People = null;
 
-    isFilteringByDepartment: string = null;
+    isFilteringByDepartment: boolean = false;
+    showingDepartment: string = "SALES";
 
     isEmployeeSelected: boolean = false;
     selectedEmployee: Employee = null;
@@ -37,6 +39,24 @@ export class PeopleComponent implements OnInit {
     getImageURLOf (url: string): string {
         return `url(${url})`;
     }
+
+    showDepartmentFilters() {
+        this.isFilteringByDepartment = !this.isFilteringByDepartment;
+
+        // If this is the firs time filtering hold the original array
+        if (this.holdPeople == null) { this.holdPeople = this.people; }
+
+        this.people = null;
+
+        // this.holdPeople.employees.filter(
+        //     (emp: Employee) => {
+        //         console.log("happening");
+        //         console.log(emp);
+        //         emp.department != 'SALES';
+        //     }
+        // )
+    }
+
 
     showEmployeeDetails(employeeName: string) {
         this.isEmployeeSelected = !this.isEmployeeSelected;

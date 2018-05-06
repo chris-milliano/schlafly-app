@@ -1,6 +1,31 @@
 #people-component {
     position: relative;
 
+    #employees__filter-button {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 5px 0;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #d85f0e;
+        transition: all 1s ease;
+
+        &:hover {
+            transform: scale(.9);
+            cursor: pointer;
+        }
+    }
+
+    #employees__sort {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 5px 0;
+
+        #employees__sort-select {
+            font-size: 1.2em;
+        }
+    }
+
     #people__employees {
         display: flex;
         flex-wrap: wrap;
@@ -45,6 +70,7 @@
 
         .people__employee {
             width: 80vw;
+            max-width: 800px;
             max-height: 90vh;
             overflow-y: auto;
             padding: 10px;

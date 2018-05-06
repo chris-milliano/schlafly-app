@@ -1,17 +1,30 @@
 <div id="people-component" class="box">
 
-    <div *ngIf="isFilteringByDepartment != null"
-        id="people__departments"
+    <h1 class="box">OUR PEOPLE</h1>
+    <div (click)="showDepartmentFilters()"
+        id="employees__filter-button"
         class="box">
-        <div *ngFor="let department of people.departments"
-            id="people__department"
-            class="box">
-            {{ department }}
-        </div>
+        FILTER BY DEPARTMENT
     </div>
+    <!-- <form *ngIf="isFilteringByDepartment"
+        id="employees__sort"
+        class="box">
+        <select [(ngModel)]="selectedDepartmentValue"
+            id="employees__sort-select"
+            class="box">
+            <option disabled>Select A Department</option>
+            <option *ngFor="let department of people.departments"
+                [value]="department">
+                {{ department }}
+            </option>
+        </select>
+    </form> -->
 
     <div id="people__employees"
         class="box">
+
+        <!-- *ngIf=" showingDepartment == '' || showingDepartment == employee.department " -->
+
         <div *ngFor="let employee of people.employees"
             (click)="showEmployeeDetails(employee.name)"
             class="box people__employee">
@@ -23,6 +36,7 @@
             <h3 class="box employee__name">{{ employee.name }}</h3>
             <h4 class="box employee__title">{{ employee.title }}</h4>
         </div>
+
     </div>
 
     <div *ngIf="isEmployeeSelected"
